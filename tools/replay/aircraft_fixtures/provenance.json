@@ -1,0 +1,141 @@
+{
+  "scope": "Untouched RGB crops of real native frames; no synthetic positive images. Source coordinates are provenance only, never recognition input. Existing torpedo fixtures cover DETECTED and torpedo confusion.",
+  "fixtures": [
+    {
+      "fixture": "resume-danger-amber.png",
+      "source": "state/resume-scope-current-20261015.png",
+      "source_crop_xywh": [1375, 435, 65, 60],
+      "family": "central_dangers",
+      "sha256": "26a6560bab71561130b44e0c0cb155717d72f1ce275cebe62c52db01a202914a"
+    },
+    {
+      "fixture": "resume-danger-red.png",
+      "source": "state/resume-scope-current-20261015.png",
+      "source_crop_xywh": [1390, 485, 65, 60],
+      "family": "central_dangers",
+      "sha256": "0bd314c5a74620e1d4b067fc82460624c8ec0c121ab6b8d6cdfde59c76d6b669"
+    },
+    {
+      "fixture": "scout-guided.png",
+      "source": "state/aircraft-consumer-20261015/236818.15.9-guided-146.383s.png",
+      "source_crop_xywh": [
+        1780,
+        140,
+        90,
+        70
+      ],
+      "family": "consumables",
+      "sha256": "67fcaa448cc2f150d4a4d52fee63e7ea6a7e6b47b4dba52ac64180ffb7929813"
+    },
+    {
+      "fixture": "scout-adjacent-02.png",
+      "source": "state/aircraft-consumer-20261015/236818.15.9-adjacent-02.png",
+      "source_crop_xywh": [
+        1740,
+        200,
+        70,
+        65
+      ],
+      "family": "consumables",
+      "sha256": "07585fc70d4fa7af644bb0f93959b47e6902f98a5e411ab39f2573893bf05c07"
+    },
+    {
+      "fixture": "scout-adjacent-03.png",
+      "source": "state/aircraft-consumer-20261015/236818.15.9-adjacent-03.png",
+      "source_crop_xywh": [
+        1645,
+        320,
+        75,
+        70
+      ],
+      "family": "consumables",
+      "sha256": "396d6a8da2633d59004163712e83d3a019152241d8b69273e92a801ed83bb73c"
+    },
+    {
+      "fixture": "scout-adjacent-04.png",
+      "source": "state/aircraft-consumer-20261015/236818.15.9-adjacent-04.png",
+      "source_crop_xywh": [
+        1615,
+        385,
+        75,
+        75
+      ],
+      "family": "consumables",
+      "sha256": "f5a87384ff6778c11194376da26b97fbc628d45582ff12d875025d9b8ba93c23"
+    },
+    {
+      "fixture": "danger-guided.png",
+      "source": "state/aircraft-consumer-20261015/236925.15.9-guided-1061.937s.png",
+      "source_crop_xywh": [
+        990,
+        970,
+        90,
+        80
+      ],
+      "family": "central_dangers",
+      "sha256": "e7e45388794d52e0f495a38ebf41d70353dd8f84e71201709ad59ebcf7f8dcf8"
+    },
+    {
+      "fixture": "danger-adjacent-01.png",
+      "source": "state/aircraft-consumer-20261015/236925.15.9-adjacent-01.png",
+      "source_crop_xywh": [
+        1043,
+        1015,
+        63,
+        63
+      ],
+      "family": "central_dangers",
+      "sha256": "328f6daebea47f20fd684792939171236c0c110f29ebe9a8f7c8e50fab813910"
+    },
+    {
+      "fixture": "danger-adjacent-02.png",
+      "source": "state/aircraft-consumer-20261015/236925.15.9-adjacent-02.png",
+      "source_crop_xywh": [
+        985,
+        951,
+        64,
+        65
+      ],
+      "family": "central_dangers",
+      "sha256": "fc02f71f581b5699164d4ced683cb922206a8a1f72a143611e26986e55276ceb"
+    },
+    {
+      "fixture": "danger-adjacent-04.png",
+      "source": "state/aircraft-consumer-20261015/236925.15.9-adjacent-04.png",
+      "source_crop_xywh": [
+        961,
+        911,
+        61,
+        65
+      ],
+      "family": "central_dangers",
+      "sha256": "54aa7bb2595b70be465d2ebf65d2363c8e168aa58a1fb5867676723dcf421809"
+    },
+    {
+      "fixture": "danger-adjacent-03.png",
+      "source": "state/aircraft-consumer-20261015/236925.15.9-adjacent-03.png",
+      "source_crop_xywh": [
+        969,
+        926,
+        61,
+        65
+      ],
+      "family": "central_dangers",
+      "sha256": "6107a62f1e1315ba51a57a809d110c195212340b3687b3d3f023ff8cf8818285"
+    }
+  ],
+  "negative_fixtures": [
+    {
+      "fixture": "ship-label-native-context.png",
+      "source": "state/aircraft-consumer-20261015/ship-label-native-context.png",
+      "description": "Untouched previously reviewed real context crop; ship labels",
+      "sha256": "debedd2dc0b31993ce466674f6a3da8f65e1eb3b103e16c84e18647a004db762"
+    },
+    {
+      "fixture": "aerodrome-native-context.png",
+      "source": "state/aircraft-consumer-20261015/aerodrome-native-context.png",
+      "description": "Untouched previously reviewed Aerodrome building label crop",
+      "sha256": "97f637177a5280d668036ff179560b3b14c575d1940cb9c0b9ed32eecdfbc375"
+    }
+  ]
+}

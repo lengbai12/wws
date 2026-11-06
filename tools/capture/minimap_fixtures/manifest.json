@@ -1,0 +1,155 @@
+{
+  "purpose": "tactical-map ship-class icon crops for tools/capture/test_minimap_enemy_click.py",
+  "frames": {
+    "map4": "state/cn360-flow-20261021/map4/frame-000.png",
+    "map2": "state/cn360-flow-20261021/map2/frame-000.png",
+    "course6": "state/cn360-flow-20261021/course6/after_click.png"
+  },
+  "crops": [
+    {
+      "name": "map4-enemy",
+      "file": "map4-enemy.png",
+      "source": "state/cn360-flow-20261021/map4/frame-000.png",
+      "source_sha256": "c51d9faa9fe8629b24d7761ac26a624830e759ae214fe93b282db3d0e74425dc",
+      "crop_box": [
+        925,
+        626,
+        951,
+        652
+      ],
+      "size": [
+        26,
+        26
+      ],
+      "expect": "bb",
+      "note": "tactical-map enemy icon, inside the measured map rect"
+    },
+    {
+      "name": "map4-own",
+      "file": "map4-own.png",
+      "source": "state/cn360-flow-20261021/map4/frame-000.png",
+      "source_sha256": "c51d9faa9fe8629b24d7761ac26a624830e759ae214fe93b282db3d0e74425dc",
+      "crop_box": [
+        667,
+        345,
+        727,
+        405
+      ],
+      "size": [
+        60,
+        60
+      ],
+      "expect": "unknown",
+      "note": "white own-ship arrow, must not classify as a ship"
+    },
+    {
+      "name": "map2-enemy",
+      "file": "map2-enemy.png",
+      "source": "state/cn360-flow-20261021/map2/frame-000.png",
+      "source_sha256": "b9f264fa5a6d63a6fc773e919e38559722fc83a8d924b1f629f1f84c1e4e52e4",
+      "crop_box": [
+        925,
+        626,
+        951,
+        652
+      ],
+      "size": [
+        26,
+        26
+      ],
+      "expect": "bb",
+      "note": "tactical-map enemy icon, inside the measured map rect"
+    },
+    {
+      "name": "map2-own",
+      "file": "map2-own.png",
+      "source": "state/cn360-flow-20261021/map2/frame-000.png",
+      "source_sha256": "b9f264fa5a6d63a6fc773e919e38559722fc83a8d924b1f629f1f84c1e4e52e4",
+      "crop_box": [
+        681,
+        423,
+        741,
+        483
+      ],
+      "size": [
+        60,
+        60
+      ],
+      "expect": "unknown",
+      "note": "white own-ship arrow, must not classify as a ship"
+    },
+    {
+      "name": "course6-enemy",
+      "file": "course6-enemy.png",
+      "source": "state/cn360-flow-20261021/course6/after_click.png",
+      "source_sha256": "9ecbdb960df6a9c47e9f7ca5fc1e8394ee652274a90500791b6ea8e5bd364390",
+      "crop_box": [
+        1231,
+        930,
+        1263,
+        962
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "expect": "bb",
+      "note": "tactical-map enemy icon in a 2560x1600 desktop capture (frame content 0,96..2560,1504)"
+    },
+    {
+      "name": "course6-minimap-enemy",
+      "file": "course6-minimap-enemy.png",
+      "source": "state/cn360-flow-20261021/course6/after_click.png",
+      "source_sha256": "9ecbdb960df6a9c47e9f7ca5fc1e8394ee652274a90500791b6ea8e5bd364390",
+      "crop_box": [
+        2161,
+        1255,
+        2193,
+        1287
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "expect": "bb",
+      "note": "maximap-panel icon, outside the tactical-map rect; classifier regression only"
+    },
+    {
+      "name": "course6-own",
+      "file": "course6-own.png",
+      "source": "state/cn360-flow-20261021/course6/after_click.png",
+      "source_sha256": "9ecbdb960df6a9c47e9f7ca5fc1e8394ee652274a90500791b6ea8e5bd364390",
+      "crop_box": [
+        897,
+        550,
+        949,
+        602
+      ],
+      "size": [
+        52,
+        52
+      ],
+      "expect": "unknown",
+      "note": "white own-ship arrow, must not classify as a ship"
+    },
+    {
+      "name": "map4-sea",
+      "file": "map4-sea.png",
+      "source": "state/cn360-flow-20261021/map4/frame-000.png",
+      "source_sha256": "c51d9faa9fe8629b24d7761ac26a624830e759ae214fe93b282db3d0e74425dc",
+      "crop_box": [
+        787,
+        487,
+        813,
+        513
+      ],
+      "size": [
+        26,
+        26
+      ],
+      "expect": "unknown",
+      "note": "empty sea, must not classify as a ship"
+    }
+  ],
+  "note": "crops cut by hand from the three saved frames; expectations are what the classifier must return, not what the game would say about an unknown contact"
+}

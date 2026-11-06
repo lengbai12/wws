@@ -1,0 +1,62 @@
+# --- runtime data / intermediate products (never commit) ---
+state/
+recordings/
+replays/
+*.wowsreplay
+*.mkv
+*.ppm
+*.mp4
+*.log
+
+# --- python env and caches ---
+.venv/
+**/__pycache__/
+*.py[cod]
+tools/replay/.cache/
+.pytest_cache/
+
+# --- model weights and datasets (produced by training, not source) ---
+*.npz
+*.npy
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# --- rust build output ---
+rust/target/
+
+# --- misc ---
+.DS_Store
+*.orig
+*.rej
+
+# --- documentation is not part of the code drop ---
+docs/
+AGENTS.md
+.omp/
+*.md
+
+# --- game/runtime leftovers that are not engineering content ---
+.vscode/
+crashes/
+_modtest/
+profile/
+proc/
+tstex_modules/
+*.xml
+explorer.py
+
+# --- game guide documents ---
+行动/
+*.pdf
+
+# --- screenshots / fixtures ---
+*.png
+*.jpg
+*.jpeg
+*.gif
+tools/replay/main_view_fixtures/
+tools/replay/minimap_fixtures/
+tools/capture/aim_fixtures/
+tools/capture/standoff_fixtures/

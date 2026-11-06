@@ -1,0 +1,17 @@
+[package]
+name = "wws-perception"
+version = "0.1.0"
+edition = "2024"
+
+# Deliberately small. The reference project (fps-vision-main) is 77k lines of Rust with
+# OpenCV, cudarc and pipewire; porting our whole pipeline to that shape would be weeks of
+# work for no gain, because replay parsing and training are wedded to third-party Python
+# and to PyTorch. What does belong in Rust is the runtime agent: the per-frame loop that
+# captures the minimap, runs the model and decides, where the GIL and Python overhead
+# actually cost frames. This crate starts that layer at its most testable point - the
+# decode step, which is pure arithmetic and can be checked against the Python reference
+# byte for byte.
+[dependencies]
+ndarray = "0.17"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

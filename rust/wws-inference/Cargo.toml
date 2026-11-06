@@ -1,0 +1,17 @@
+[package]
+name = "wws-inference"
+version = "0.1.0"
+edition = "2024"
+
+# The runtime half of the split the reference project also makes: training stays in
+# Python/PyTorch and exports ONNX, and the agent compiles and runs that graph. Keeping
+# this as its own crate means the parity crate (wws-perception) stays dependency-free,
+# and only the code that actually needs a runtime pays for one.
+[dependencies]
+ndarray = "0.17"
+ort = { version = "=2.0.0-rc.13", features = ["ndarray"] }
+wws-perception = { path = "../wws-perception" }
+
+[dev-dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
